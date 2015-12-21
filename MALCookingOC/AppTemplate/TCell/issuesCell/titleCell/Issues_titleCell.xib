@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="Issues_titleCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKK-a0-t2V" userLabel="titleView">
+                        <rect key="frame" x="0.0" y="15" width="320" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xg1-rN-KUu">
+                                <rect key="frame" x="139" y="14" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xg1-rN-KUu" firstAttribute="centerX" secondItem="dKK-a0-t2V" secondAttribute="centerX" id="RCl-fp-SfA"/>
+                            <constraint firstItem="Xg1-rN-KUu" firstAttribute="centerY" secondItem="dKK-a0-t2V" secondAttribute="centerY" id="T6m-Ak-Pua"/>
+                            <constraint firstAttribute="height" constant="44" id="aOc-hF-zPv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aOc-hF-zPv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="dKK-a0-t2V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lsd-PE-Qv4"/>
+                    <constraint firstAttribute="bottom" secondItem="dKK-a0-t2V" secondAttribute="bottom" id="QXI-cX-rpg"/>
+                    <constraint firstItem="dKK-a0-t2V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="j3O-gt-ZDb"/>
+                    <constraint firstAttribute="trailing" secondItem="dKK-a0-t2V" secondAttribute="trailing" id="wO1-i5-SJc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="titleLB" destination="Xg1-rN-KUu" id="0nq-dL-nTe"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="9Pw-v3-LC7">
+            <objects>
+                <viewController storyboardIdentifier="home" id="IPU-BA-bLf" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tgN-Ut-6IQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="WfY-jI-206"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="95A-gO-DNA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4yc-rC-Iv9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IPU-BA-bLf" id="0RZ-aA-grX"/>
+                                    <outlet property="delegate" destination="IPU-BA-bLf" id="96i-RD-nzZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4yc-rC-Iv9" secondAttribute="bottom" id="7a8-8I-KTj"/>
+                            <constraint firstItem="4yc-rC-Iv9" firstAttribute="top" secondItem="95A-gO-DNA" secondAttribute="top" id="L68-IQ-YTq"/>
+                            <constraint firstItem="4yc-rC-Iv9" firstAttribute="leading" secondItem="95A-gO-DNA" secondAttribute="leading" id="QXv-vO-Toy"/>
+                            <constraint firstAttribute="trailing" secondItem="4yc-rC-Iv9" secondAttribute="trailing" id="X3Q-k5-dKD"/>
+                            <constraint firstItem="WfY-jI-206" firstAttribute="top" secondItem="4yc-rC-Iv9" secondAttribute="bottom" id="hXp-zS-kYH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hXp-zS-kYH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="4yc-rC-Iv9" id="Bd1-wi-HHA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IwG-Fb-D59" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="209"/>
+        </scene>
+    </scenes>
+</document>

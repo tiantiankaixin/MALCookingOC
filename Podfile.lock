@@ -1,0 +1,59 @@
+PODS:
+  - AFNetworking (3.0.3):
+    - AFNetworking/NSURLSession (= 3.0.3)
+    - AFNetworking/Reachability (= 3.0.3)
+    - AFNetworking/Security (= 3.0.3)
+    - AFNetworking/Serialization (= 3.0.3)
+    - AFNetworking/UIKit (= 3.0.3)
+  - AFNetworking/NSURLSession (3.0.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.3)
+  - AFNetworking/Security (3.0.3)
+  - AFNetworking/Serialization (3.0.3)
+  - AFNetworking/UIKit (3.0.3):
+    - AFNetworking/NSURLSession
+  - MJExtension (3.0.7)
+  - MJRefresh (3.0.7)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+
+DEPENDENCIES:
+  - AFNetworking (from `https://github.com/AFNetworking/AFNetworking.git`)
+  - MJExtension (from `https://github.com/CoderMJLee/MJExtension.git`)
+  - MJRefresh (from `https://github.com/CoderMJLee/MJRefresh.git`)
+  - SDWebImage (from `https://github.com/rs/SDWebImage.git`)
+
+EXTERNAL SOURCES:
+  AFNetworking:
+    :git: https://github.com/AFNetworking/AFNetworking.git
+  MJExtension:
+    :git: https://github.com/CoderMJLee/MJExtension.git
+  MJRefresh:
+    :git: https://github.com/CoderMJLee/MJRefresh.git
+  SDWebImage:
+    :git: https://github.com/rs/SDWebImage.git
+
+CHECKOUT OPTIONS:
+  AFNetworking:
+    :commit: 7b22a26a6cf56fd169d0dfffe481a41d7d6d26e6
+    :git: https://github.com/AFNetworking/AFNetworking.git
+  MJExtension:
+    :commit: 3223811b3736ec5426d248a8f3a0c0191ffbd416
+    :git: https://github.com/CoderMJLee/MJExtension.git
+  MJRefresh:
+    :commit: 94ccc5dfaa81612a92e5b127d6b83cfbd25c2cdc
+    :git: https://github.com/CoderMJLee/MJRefresh.git
+  SDWebImage:
+    :commit: 740cd7f0902b5e9eddf4a52ff76ec630fdf753bc
+    :git: https://github.com/rs/SDWebImage.git
+
+SPEC CHECKSUMS:
+  AFNetworking: ba06eb9f27de596808c0acc09e1c920cb1d17ab4
+  MJExtension: 290cc966f0f849b12b6391a38e296e0004ae8e5e
+  MJRefresh: f3e1228ec3d38c7ba5208d58032631a52f39f495
+  SDWebImage: 119e50946eee9ddf15589227ec2b6b37966ecd04
+
+COCOAPODS: 0.39.0
