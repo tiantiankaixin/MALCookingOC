@@ -11,7 +11,7 @@
 @interface HomeRequest : NSObject
 
 
-
++ (void)loadHomeTopDataWithFinishBlock:(FinishBlock)finish;
 
 /**
  *  加载下厨房首页issues数据

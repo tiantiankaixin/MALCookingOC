@@ -12,6 +12,7 @@
 #import "Tmodel.h"
 #import "Tcell.h"
 #import "IssuesContent_Cursor.h"
+#import "HomeTableHeaderView.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -60,6 +61,11 @@
 {
     self.dayStr = nil;
     WeakSelf(ws);
+    [HomeRequest loadHomeTopDataWithFinishBlock:^(RequestResult *result) {
+        
+        
+        
+    }];
     [HomeRequest loadIssuesDataWithDate:self.dayStr finish:^(RequestResult *result) {
         
         [ws.tableView.mj_header endRefreshing];

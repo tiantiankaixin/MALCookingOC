@@ -10,6 +10,15 @@
 
 @implementation HomeRequest
 
++ (void)loadHomeTopDataWithFinishBlock:(FinishBlock)finish
+{
+    [MALAFNManger getDataWithUrl:HomeSection0Url parameters:nil finish:^(RequestResult *result) {
+        
+        
+        
+    } des:@"加载下厨房首页头部数据"];
+}
+
 + (void)loadIssuesDataWithDate:(NSString *)dateStr finish:(FinishBlock)finish
 {
     NSString *url;
