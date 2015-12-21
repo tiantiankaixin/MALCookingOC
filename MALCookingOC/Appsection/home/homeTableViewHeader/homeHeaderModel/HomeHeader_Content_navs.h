@@ -10,4 +10,8 @@
 
 @interface HomeHeader_Content_navs : NSObject
 
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *picurl;
+@property (nonatomic, copy) NSString *url;
+
 @end

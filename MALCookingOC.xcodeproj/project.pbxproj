@@ -69,6 +69,7 @@
 		68F2378D1C23F95300119891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F2378C1C23F95300119891 /* Main.storyboard */; };
 		68F237951C24094F00119891 /* HomeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F237941C24094F00119891 /* HomeRequest.m */; };
 		68F2379C1C240BC800119891 /* TAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F2379B1C240BC800119891 /* TAdapter.m */; };
+		BFFCC85C1C28378F002B1329 /* HomeHeader_Content_Pop_events_item.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCC85B1C28378F002B1329 /* HomeHeader_Content_Pop_events_item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +206,8 @@
 		68F2379A1C240BC800119891 /* TAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAdapter.h; sourceTree = "<group>"; };
 		68F2379B1C240BC800119891 /* TAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAdapter.m; sourceTree = "<group>"; };
 		AFDA182CCA4B5287F38D4794 /* libPods-MALCookingOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MALCookingOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFCC85A1C28378F002B1329 /* HomeHeader_Content_Pop_events_item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeader_Content_Pop_events_item.h; sourceTree = "<group>"; };
+		BFFCC85B1C28378F002B1329 /* HomeHeader_Content_Pop_events_item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeader_Content_Pop_events_item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +456,8 @@
 				683ADAF51C280467003CB49A /* HomeheaderModel_Content.m */,
 				683ADAF71C28056F003CB49A /* HomeHeader_Content_Pop_events.h */,
 				683ADAF81C28056F003CB49A /* HomeHeader_Content_Pop_events.m */,
+				BFFCC85A1C28378F002B1329 /* HomeHeader_Content_Pop_events_item.h */,
+				BFFCC85B1C28378F002B1329 /* HomeHeader_Content_Pop_events_item.m */,
 				683ADAFA1C280580003CB49A /* HomeHeader_Content_navs.h */,
 				683ADAFB1C280580003CB49A /* HomeHeader_Content_navs.m */,
 			);
@@ -462,15 +467,15 @@
 		683ADAE11C280361003CB49A /* homeHeaderView */ = {
 			isa = PBXGroup;
 			children = (
+				683ADAE81C280361003CB49A /* HomeTableHeaderView.h */,
+				683ADAE91C280361003CB49A /* HomeTableHeaderView.m */,
+				683ADAEA1C280361003CB49A /* HomeTableHeaderView.xib */,
 				683ADAE21C280361003CB49A /* Home_header_food_cell.h */,
 				683ADAE31C280361003CB49A /* Home_header_food_cell.m */,
 				683ADAE41C280361003CB49A /* Home_header_food_cell.xib */,
 				683ADAE51C280361003CB49A /* Home_header_nav_cell.h */,
 				683ADAE61C280361003CB49A /* Home_header_nav_cell.m */,
 				683ADAE71C280361003CB49A /* Home_header_nav_cell.xib */,
-				683ADAE81C280361003CB49A /* HomeTableHeaderView.h */,
-				683ADAE91C280361003CB49A /* HomeTableHeaderView.m */,
-				683ADAEA1C280361003CB49A /* HomeTableHeaderView.xib */,
 			);
 			path = homeHeaderView;
 			sourceTree = "<group>";
@@ -964,6 +969,7 @@
 				683ADA901C27D3F8003CB49A /* Template2item_Contents.m in Sources */,
 				68F237951C24094F00119891 /* HomeRequest.m in Sources */,
 				683ADA861C27D371003CB49A /* IssuesContent_Cursor.m in Sources */,
+				BFFCC85C1C28378F002B1329 /* HomeHeader_Content_Pop_events_item.m in Sources */,
 				683ADA5D1C27A2F9003CB49A /* TitleModel.m in Sources */,
 				68F2377D1C23F87300119891 /* MarketViewController.m in Sources */,
 				68F2379C1C240BC800119891 /* TAdapter.m in Sources */,

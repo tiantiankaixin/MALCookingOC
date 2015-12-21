@@ -14,7 +14,7 @@
             <subviews>
                 <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoD-cD-HAh" userLabel="bgView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdU-hi-WBT" userLabel="item1" customClass="UIControl">
                     <rect key="frame" x="0.0" y="0.0" width="80" height="49"/>
@@ -23,7 +23,8 @@
                             <rect key="frame" x="8" y="0.0" width="64" height="49"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Abf-xO-T42">
-                                    <rect key="frame" x="20" y="2" width="25" height="25"/>
+                                    <rect key="frame" x="20" y="5" width="25" height="25"/>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="下厨房" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMt-rE-PUL">
                                     <rect key="frame" x="14" y="32" width="36" height="15"/>
@@ -55,10 +56,11 @@
                             <rect key="frame" x="8" y="0.0" width="64" height="49"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-5V-5wO">
-                                    <rect key="frame" x="20" y="2" width="25" height="25"/>
+                                    <rect key="frame" x="21" y="5" width="25" height="25"/>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="市集" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypx-dn-vwC" userLabel="市集">
-                                    <rect key="frame" x="14" y="32" width="36" height="15"/>
+                                    <rect key="frame" x="21" y="32" width="24" height="15"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -87,10 +89,11 @@
                             <rect key="frame" x="8" y="0.0" width="64" height="49"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jKR-hU-XV2">
-                                    <rect key="frame" x="20" y="2" width="25" height="25"/>
+                                    <rect key="frame" x="19" y="5" width="25" height="25"/>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="社区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1L-jx-hmM" userLabel="社区">
-                                    <rect key="frame" x="14" y="32" width="36" height="15"/>
+                                    <rect key="frame" x="20" y="32" width="24" height="15"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -119,10 +122,11 @@
                             <rect key="frame" x="8" y="0.0" width="64" height="49"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZc-Uw-ugP">
-                                    <rect key="frame" x="20" y="2" width="25" height="25"/>
+                                    <rect key="frame" x="20" y="5" width="25" height="25"/>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuG-1d-2MH" userLabel="我">
-                                    <rect key="frame" x="14" y="32" width="36" height="15"/>
+                                    <rect key="frame" x="26" y="32" width="12" height="15"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>

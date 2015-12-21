@@ -10,4 +10,6 @@
 
 @interface HomeTableHeaderView : UIView
 
++ (HomeTableHeaderView *)hometableheaderView;
+
 @end

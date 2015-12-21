@@ -21,10 +21,20 @@
 @property (nonatomic, strong) IssuesContent_Cursor *cursor;
 @property (nonatomic, copy) NSString *dayStr;
 @property (nonatomic, weak) NSDateFormatter *formatter;
+@property (nonatomic, strong) HomeTableHeaderView *headerView;
 
 @end
 
 @implementation HomeViewController
+
+- (HomeTableHeaderView *)headerView
+{
+    if (_headerView == nil)
+    {
+        _headerView = [HomeTableHeaderView hometableheaderView];
+    }
+    return _headerView;
+}
 
 - (NSMutableArray *)dataSource
 {
@@ -102,6 +112,26 @@
 //        }
 //    }
 //}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return self.headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 150 + (SCREEN_WIDTH / 2.0) * (96 / 160.0) + SCREEN_WIDTH * (15 / 64.0);
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.0001;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
