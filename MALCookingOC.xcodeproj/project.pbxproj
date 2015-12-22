@@ -52,6 +52,8 @@
 		688C3D861C29241500C736AD /* AdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C3D851C29241500C736AD /* AdModel.m */; };
 		688C3D891C29243500C736AD /* AdContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C3D881C29243500C736AD /* AdContent.m */; };
 		688C3D8C1C29246D00C736AD /* AdContent_adInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C3D8B1C29246D00C736AD /* AdContent_adInfo.m */; };
+		688C3D971C29561D00C736AD /* HomeNavHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C3D961C29561D00C736AD /* HomeNavHeader.m */; };
+		688C3D991C29562A00C736AD /* HomeNavHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688C3D981C29562A00C736AD /* HomeNavHeader.xib */; };
 		68F237171C23DCCA00119891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F237161C23DCCA00119891 /* main.m */; };
 		68F2371A1C23DCCA00119891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F237191C23DCCA00119891 /* AppDelegate.m */; };
 		68F237221C23DCCA00119891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F237211C23DCCA00119891 /* Assets.xcassets */; };
@@ -176,6 +178,9 @@
 		688C3D881C29243500C736AD /* AdContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdContent.m; sourceTree = "<group>"; };
 		688C3D8A1C29246D00C736AD /* AdContent_adInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdContent_adInfo.h; sourceTree = "<group>"; };
 		688C3D8B1C29246D00C736AD /* AdContent_adInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdContent_adInfo.m; sourceTree = "<group>"; };
+		688C3D951C29561D00C736AD /* HomeNavHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavHeader.h; sourceTree = "<group>"; };
+		688C3D961C29561D00C736AD /* HomeNavHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavHeader.m; sourceTree = "<group>"; };
+		688C3D981C29562A00C736AD /* HomeNavHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeNavHeader.xib; sourceTree = "<group>"; };
 		68F237121C23DCCA00119891 /* MALCookingOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MALCookingOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F237161C23DCCA00119891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68F237181C23DCCA00119891 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -444,6 +449,7 @@
 		683ADACA1C280324003CB49A /* homeIndex */ = {
 			isa = PBXGroup;
 			children = (
+				688C3D941C2955F300C736AD /* homeNavHeader */,
 				688C3D831C29240400C736AD /* homeAd */,
 				688C3D5F1C2923F300C736AD /* homeTableViewHeader */,
 				683ADACC1C280324003CB49A /* HomeViewController.h */,
@@ -508,6 +514,16 @@
 				688C3D8B1C29246D00C736AD /* AdContent_adInfo.m */,
 			);
 			path = homeAd;
+			sourceTree = "<group>";
+		};
+		688C3D941C2955F300C736AD /* homeNavHeader */ = {
+			isa = PBXGroup;
+			children = (
+				688C3D951C29561D00C736AD /* HomeNavHeader.h */,
+				688C3D961C29561D00C736AD /* HomeNavHeader.m */,
+				688C3D981C29562A00C736AD /* HomeNavHeader.xib */,
+			);
+			path = homeNavHeader;
 			sourceTree = "<group>";
 		};
 		68F237091C23DCCA00119891 = {
@@ -902,6 +918,7 @@
 				68F2378B1C23F8DA00119891 /* My.storyboard in Resources */,
 				683ADAA21C27D60F003CB49A /* Template1Cell.xib in Resources */,
 				688C3D801C2923F300C736AD /* Home_header_nav_cell.xib in Resources */,
+				688C3D991C29562A00C736AD /* HomeNavHeader.xib in Resources */,
 				68F2378D1C23F95300119891 /* Main.storyboard in Resources */,
 				68F237251C23DCCA00119891 /* LaunchScreen.storyboard in Resources */,
 				688C3D7E1C2923F300C736AD /* Home_header_food_cell.xib in Resources */,
@@ -1031,6 +1048,7 @@
 				688C3D861C29241500C736AD /* AdModel.m in Sources */,
 				683ADA581C279F04003CB49A /* Template5Cell.m in Sources */,
 				68F237751C23F2B900119891 /* MalTabBar.m in Sources */,
+				688C3D971C29561D00C736AD /* HomeNavHeader.m in Sources */,
 				68F237831C23F89400119891 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

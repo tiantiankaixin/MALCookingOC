@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeNavHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUA-fK-xLM">
+                    <rect key="frame" x="14" y="11" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="uJ3-EG-7Xh"/>
+                        <constraint firstAttribute="width" constant="22" id="yeD-w3-h6i"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="homepageCreateRecipeButton"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-Wy-TtD">
+                    <rect key="frame" x="284" y="11" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="ACl-Tp-eYp"/>
+                        <constraint firstAttribute="height" constant="22" id="TSe-mc-ahf"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="buylistButtonImage"/>
+                </button>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-GF-JIw">
+                    <rect key="frame" x="47" y="0.0" width="226" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aGj-GF-JIw" firstAttribute="leading" secondItem="jUA-fK-xLM" secondAttribute="trailing" constant="11" id="13I-vQ-dNJ"/>
+                <constraint firstItem="pf8-Wy-TtD" firstAttribute="leading" secondItem="aGj-GF-JIw" secondAttribute="trailing" constant="11" id="7q4-m5-6al"/>
+                <constraint firstItem="pf8-Wy-TtD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9Or-WU-TL5"/>
+                <constraint firstItem="pf8-Wy-TtD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="A0x-yu-0nQ"/>
+                <constraint firstAttribute="trailing" secondItem="pf8-Wy-TtD" secondAttribute="trailing" constant="14" id="FW4-El-xR0"/>
+                <constraint firstItem="jUA-fK-xLM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="VTq-Cl-k8c"/>
+                <constraint firstItem="jUA-fK-xLM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lXY-FX-aYU"/>
+                <constraint firstItem="aGj-GF-JIw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mYH-eT-qpg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="A0x-yu-0nQ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="414" y="274"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buylistButtonImage" width="22" height="22"/>
+        <image name="homepageCreateRecipeButton" width="22" height="22"/>
+    </resources>
+</document>

@@ -15,6 +15,7 @@
 #import "HomeTableHeaderView.h"
 #import "HomeHeaderModel.h"
 #import "AdModel.h"
+#import "HomeNavHeader.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -62,6 +63,8 @@
 
 - (void)setUpView
 {
+    [HomeNavHeader addHeaderWithNavigationBar:self.navigationController.navigationBar];
+    
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.estimatedRowHeight = 44;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(pullDownRefresh)];
