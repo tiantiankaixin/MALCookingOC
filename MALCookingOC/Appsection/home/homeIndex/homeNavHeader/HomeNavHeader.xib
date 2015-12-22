@@ -32,7 +32,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="aGj-GF-JIw" firstAttribute="leading" secondItem="jUA-fK-xLM" secondAttribute="trailing" constant="11" id="13I-vQ-dNJ"/>
                 <constraint firstItem="pf8-Wy-TtD" firstAttribute="leading" secondItem="aGj-GF-JIw" secondAttribute="trailing" constant="11" id="7q4-m5-6al"/>

@@ -15,7 +15,6 @@
     HomeNavHeader *header = [[[NSBundle mainBundle] loadNibNamed:@"HomeNavHeader" owner:nil options:nil] firstObject];
     
     
-    
     return header;
 }
 

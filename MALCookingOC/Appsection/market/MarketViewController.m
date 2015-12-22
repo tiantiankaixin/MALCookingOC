@@ -9,6 +9,7 @@
 #import "MarketViewController.h"
 
 @interface MarketViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
@@ -20,8 +21,10 @@
     return [marketSTB instantiateViewControllerWithIdentifier:@"market"];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:MALURL(MarketUrl)]];
     // Do any additional setup after loading the view.
 }
 

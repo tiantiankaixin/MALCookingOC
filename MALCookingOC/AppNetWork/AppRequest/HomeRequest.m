@@ -33,7 +33,7 @@
 
 + (void)loadAdDataWithFinishBlock:(FinishBlock)finish
 {
-    [MALAFNManger getDataWithUrl:HomeAdDataUrl parameters:nil finish:finish des:@"加载下厨房首页数据"];
+    [MALAFNManger getDataWithUrl:HomeAdDataUrl parameters:nil finish:finish des:@"加载下厨房首页广告数据"];
 }
 
 @end

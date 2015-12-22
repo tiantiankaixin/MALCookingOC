@@ -9,8 +9,14 @@
 #ifndef MacrosForProject_h
 #define MacrosForProject_h
 
+#pragma mark - 应用内使用的一些全局变量
+#define AppGeneralColor
+
+
+#pragma mark - 第三方框架
 //SDWebImage
 #define MSDSetImage(view,url,placeholder) [view sd_setImageWithURL:MALURL(url) placeholderImage:placeholder options:SDWebImageLowPriority]
+
 
 
 #endif /* MacrosForProject_h */

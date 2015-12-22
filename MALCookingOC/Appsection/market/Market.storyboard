@@ -16,12 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="ocx-LL-0KA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7B-T7-VrX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="h7B-T7-VrX" secondAttribute="trailing" id="S7X-BK-mRx"/>
+                            <constraint firstAttribute="bottom" secondItem="h7B-T7-VrX" secondAttribute="bottom" id="a8g-g7-jgM"/>
+                            <constraint firstItem="h7B-T7-VrX" firstAttribute="top" secondItem="ocx-LL-0KA" secondAttribute="top" id="idt-6E-8N8"/>
+                            <constraint firstItem="h7B-T7-VrX" firstAttribute="leading" secondItem="ocx-LL-0KA" secondAttribute="leading" id="oFF-l0-epw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="h7B-T7-VrX" id="cQY-E1-dNH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PhF-Qu-8WH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="580" y="526"/>
+            <point key="canvasLocation" x="475" y="477"/>
         </scene>
     </scenes>
 </document>
