@@ -10,7 +10,11 @@
 
 @interface HomeRequest : NSObject
 
-
+/**
+ *  加载下厨房首页顶部数据
+ *
+ *  @param finish 回调block
+ */
 + (void)loadHomeTopDataWithFinishBlock:(FinishBlock)finish;
 
 /**
@@ -20,5 +24,7 @@
  *  @param finish  回调block
  */
 + (void)loadIssuesDataWithDate:(NSString *)dateStr finish:(FinishBlock)finish;
+
++ (void)loadAdDataWithFinishBlock:(FinishBlock)finish;
 
 @end

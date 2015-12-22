@@ -25,7 +25,7 @@
 {
     if (_malTabBar == nil)
     {
-        _malTabBar = [MalTabBar malTabBarWithImageArray:nil];
+        _malTabBar = [MalTabBar malTabBarWithDefaultImageArray:@[@"tabBDeselected",@"tabBDeselected",@"tabCDeselected",@"tabDDeselected"] selectImageArray:@[@"tabASelected",@"tabBSelected",@"tabCSelected",@"tabDSelected"]];
     }
     return _malTabBar;
 }
@@ -49,7 +49,7 @@
 - (void)addTabBar
 {
     [self.tabBar addSubview:self.malTabBar];
-    //self.malTabBar.tabBarDelegate = self;
+    self.malTabBar.tabBarDelegate = self;
 }
 
 #pragma mark - tabbar delegate

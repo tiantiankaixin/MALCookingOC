@@ -18,7 +18,7 @@
 
 @property (nonatomic, weak) id<MalTabBarDelegate> tabBarDelegate;
 
-+ (MalTabBar *)malTabBarWithImageArray:(NSArray *)imageArray;
++ (MalTabBar *)malTabBarWithDefaultImageArray:(NSArray *)defaultImageArray selectImageArray:(NSArray *)selectImageArray;
 
 - (void)selectItemWithIndex:(NSInteger)needSelectIndex;
 

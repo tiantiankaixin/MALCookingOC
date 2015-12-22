@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="321"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DiV-Lb-HIe" userLabel="popularMenu">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="96"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-az-mDS">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="96"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本周流行菜谱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7u-QY-K3H">
+                            <rect key="frame" x="35" y="70" width="90" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Y7u-QY-K3H" secondAttribute="bottom" constant="8" id="A9K-mM-48p"/>
+                        <constraint firstAttribute="bottom" secondItem="HA1-az-mDS" secondAttribute="bottom" id="G96-Hr-25n"/>
+                        <constraint firstItem="Y7u-QY-K3H" firstAttribute="centerX" secondItem="DiV-Lb-HIe" secondAttribute="centerX" id="GiC-mi-n2H"/>
+                        <constraint firstItem="HA1-az-mDS" firstAttribute="top" secondItem="DiV-Lb-HIe" secondAttribute="top" id="Iyy-ov-0uj"/>
+                        <constraint firstAttribute="trailing" secondItem="HA1-az-mDS" secondAttribute="trailing" id="SnC-2c-cFa"/>
+                        <constraint firstItem="HA1-az-mDS" firstAttribute="leading" secondItem="DiV-Lb-HIe" secondAttribute="leading" id="WpK-LG-gHw"/>
+                        <constraint firstAttribute="width" secondItem="DiV-Lb-HIe" secondAttribute="height" multiplier="5:3" id="qHg-xJ-tdn"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Npw-fT-BgQ" userLabel="findFriends">
+                    <rect key="frame" x="160" y="0.0" width="160" height="96"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedsNoFriends" translatesAutoresizingMaskIntoConstraints="NO" id="2tD-Hy-7Ol">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="96"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="试着添加一些朋友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Df8-Bq-Icd">
+                            <rect key="frame" x="20" y="70" width="120" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedsNoFriendsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="asI-tV-CSh">
+                            <rect key="frame" x="60" y="28" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="1iL-wa-MwO"/>
+                                <constraint firstAttribute="height" constant="40" id="5Sd-G4-9GN"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="asI-tV-CSh" firstAttribute="centerY" secondItem="Npw-fT-BgQ" secondAttribute="centerY" id="NI7-EG-WBk"/>
+                        <constraint firstAttribute="trailing" secondItem="2tD-Hy-7Ol" secondAttribute="trailing" id="OSX-gp-hOQ"/>
+                        <constraint firstItem="Df8-Bq-Icd" firstAttribute="centerX" secondItem="Npw-fT-BgQ" secondAttribute="centerX" id="PvG-4L-XgM"/>
+                        <constraint firstItem="2tD-Hy-7Ol" firstAttribute="leading" secondItem="Npw-fT-BgQ" secondAttribute="leading" id="STq-xm-vpa"/>
+                        <constraint firstItem="2tD-Hy-7Ol" firstAttribute="top" secondItem="Npw-fT-BgQ" secondAttribute="top" id="aJR-J6-UUr"/>
+                        <constraint firstItem="asI-tV-CSh" firstAttribute="centerX" secondItem="Npw-fT-BgQ" secondAttribute="centerX" id="nkE-kO-R7K"/>
+                        <constraint firstAttribute="bottom" secondItem="Df8-Bq-Icd" secondAttribute="bottom" constant="8" id="sgI-Vk-5Hk"/>
+                        <constraint firstAttribute="bottom" secondItem="2tD-Hy-7Ol" secondAttribute="bottom" id="umH-m6-hZW"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LY1-A2-6wB" userLabel="navCollectionView">
+                    <rect key="frame" x="0.0" y="96" width="320" height="75"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="0x9-ac-bQV"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Qe-OD-Ecx">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cm-NQ-fj2" userLabel="adBtn">
+                    <rect key="frame" x="0.0" y="171" width="320" height="75"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7cm-NQ-fj2" secondAttribute="height" multiplier="64:15" id="rUk-lL-NFT"/>
+                    </constraints>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-op-jNt">
+                    <rect key="frame" x="0.0" y="246" width="320" height="75"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vZw-jY-e1O">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4Un-yM-CW9">
+                    <rect key="frame" x="141" y="284" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.53550554747711254" blue="0.1873427906616103" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8nn-op-jNt" firstAttribute="top" secondItem="7cm-NQ-fj2" secondAttribute="bottom" id="6df-fu-NYk"/>
+                <constraint firstItem="Npw-fT-BgQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="78v-Bu-mGH"/>
+                <constraint firstItem="8nn-op-jNt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HDU-J9-iSa"/>
+                <constraint firstAttribute="bottom" secondItem="4Un-yM-CW9" secondAttribute="bottom" id="NQe-nG-Eg0"/>
+                <constraint firstAttribute="bottom" secondItem="8nn-op-jNt" secondAttribute="bottom" id="Pwq-Z7-1dn"/>
+                <constraint firstItem="DiV-Lb-HIe" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:2" id="SJf-bF-VeA"/>
+                <constraint firstItem="7cm-NQ-fj2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="U1E-AJ-ipI"/>
+                <constraint firstItem="4Un-yM-CW9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Uaa-Op-OBi"/>
+                <constraint firstItem="7cm-NQ-fj2" firstAttribute="top" secondItem="LY1-A2-6wB" secondAttribute="bottom" id="Z0R-kD-jbP"/>
+                <constraint firstAttribute="trailing" secondItem="LY1-A2-6wB" secondAttribute="trailing" id="aMW-J3-OKi"/>
+                <constraint firstItem="DiV-Lb-HIe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jFp-9g-AML"/>
+                <constraint firstItem="DiV-Lb-HIe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="km2-Ks-1Vl"/>
+                <constraint firstItem="Npw-fT-BgQ" firstAttribute="height" secondItem="DiV-Lb-HIe" secondAttribute="height" id="lAj-1R-quC"/>
+                <constraint firstAttribute="trailing" secondItem="8nn-op-jNt" secondAttribute="trailing" id="mYL-gD-Xwl"/>
+                <constraint firstItem="LY1-A2-6wB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="n7R-oJ-dgW"/>
+                <constraint firstAttribute="trailing" secondItem="Npw-fT-BgQ" secondAttribute="trailing" id="nzs-XC-fe7"/>
+                <constraint firstAttribute="trailing" secondItem="7cm-NQ-fj2" secondAttribute="trailing" id="oH1-Q5-5EY"/>
+                <constraint firstItem="LY1-A2-6wB" firstAttribute="top" secondItem="Npw-fT-BgQ" secondAttribute="bottom" id="yQF-ze-QIS"/>
+                <constraint firstItem="Npw-fT-BgQ" firstAttribute="width" secondItem="DiV-Lb-HIe" secondAttribute="width" id="zit-2n-juC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="adBtn" destination="7cm-NQ-fj2" id="fh8-mj-6gq"/>
+                <outlet property="findFriendsView" destination="Npw-fT-BgQ" id="joi-Dn-ojd"/>
+                <outlet property="foodCollectionView" destination="8nn-op-jNt" id="dX3-m9-LAG"/>
+                <outlet property="navCollectionView" destination="LY1-A2-6wB" id="uJd-Ia-zdu"/>
+                <outlet property="pageControl" destination="4Un-yM-CW9" id="RRg-rr-PLF"/>
+                <outlet property="pop_recipe_picurl_IM" destination="HA1-az-mDS" id="g9q-fu-Rke"/>
+            </connections>
+            <point key="canvasLocation" x="480" y="374"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="feedsNoFriends" width="320" height="240"/>
+        <image name="feedsNoFriendsIcon" width="40" height="40"/>
+    </resources>
+</document>

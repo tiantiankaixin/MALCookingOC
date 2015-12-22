@@ -5,8 +5,8 @@ platform :ios, '8.0'
 
 target 'MALCookingOC' do
 
-pod 'AFNetworking',  :git =>  'https://github.com/AFNetworking/AFNetworking.git'
-pod 'MJExtension',  :git =>  'https://github.com/CoderMJLee/MJExtension.git'
+pod 'AFNetworking', '~> 3.0.4'
+pod 'MJExtension', '~> 3.0.7'
 pod 'MJRefresh', '~> 3.0.7'
 pod 'SDWebImage', '~> 3.7.3'
 

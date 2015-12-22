@@ -13,6 +13,8 @@
 #import "Tcell.h"
 #import "IssuesContent_Cursor.h"
 #import "HomeTableHeaderView.h"
+#import "HomeHeaderModel.h"
+#import "AdModel.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -71,11 +73,29 @@
 {
     self.dayStr = nil;
     WeakSelf(ws);
+    //加载顶部视图数据
     [HomeRequest loadHomeTopDataWithFinishBlock:^(RequestResult *result) {
         
-        
-        
+        NSString *status = result.requestData[@"status"];
+        if ([status isEqualToString:@"ok"])
+        {
+           HomeHeaderModel *model = [HomeHeaderModel mj_objectWithKeyValues:result.requestData];
+            [ws.headerView fillHeaderDataWithModel:model];
+        }
     }];
+    
+    //加载广告数据
+    [HomeRequest loadAdDataWithFinishBlock:^(RequestResult *result) {
+        
+        NSString *status = result.requestData[@"status"];
+        if ([status isEqualToString:@"ok"])
+        {
+            AdModel *ad = [AdModel mj_objectWithKeyValues:result.requestData];
+            [ws.headerView fillAdDataWithModel:ad];
+        }
+    }];
+    
+    //加载issues数据
     [HomeRequest loadIssuesDataWithDate:self.dayStr finish:^(RequestResult *result) {
         
         [ws.tableView.mj_header endRefreshing];

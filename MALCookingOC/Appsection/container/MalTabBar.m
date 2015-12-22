@@ -13,6 +13,8 @@
 @property (nonatomic, assign) NSInteger currentIndex;
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *labelArray;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imageArray;
+@property (nonatomic, strong) NSArray *defaultImageArray;
+@property (nonatomic, strong) NSArray *selectImageArray;
 @property (nonatomic, strong) UIColor *defaultColor;
 @property (nonatomic, strong) UIColor *selectColor;
 
@@ -20,11 +22,13 @@
 
 @implementation MalTabBar
 
-+ (MalTabBar *)malTabBarWithImageArray:(NSArray *)imageArray
++ (MalTabBar *)malTabBarWithDefaultImageArray:(NSArray *)defaultImageArray selectImageArray:(NSArray *)selectImageArray
 {
     MalTabBar *tabBar = (MalTabBar *)[[[NSBundle mainBundle] loadNibNamed:@"MalTabBar" owner:nil options:nil] firstObject];
     
     [tabBar setUpView];
+    tabBar.defaultImageArray = defaultImageArray;
+    tabBar.selectImageArray = selectImageArray;
     [tabBar configureSomeData];
     
     return tabBar;
@@ -40,6 +44,11 @@
     self.currentIndex = -1;
     self.defaultColor = [UIColor blackColor];
     self.selectColor = [UIColor redColor];
+    [self.imageArray enumerateObjectsUsingBlock:^(UIImageView *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        obj.image = [UIImage imageNamed:self.defaultImageArray[idx]];
+        
+    }];
     [self selectItemWithIndex:0];
 }
 
@@ -76,11 +85,15 @@
     {
        UILabel *lb = self.labelArray[fromIndex];
        lb.textColor = self.defaultColor;
+        UIImageView *im = self.imageArray[fromIndex];
+        im.image = [UIImage imageNamed:self.defaultImageArray[fromIndex]];
     }
     if ([MalTabBar vaildIndex:toIndex])
     {
         UILabel *lb = self.labelArray[toIndex];
         lb.textColor = self.selectColor;
+        UIImageView *im = self.imageArray[toIndex];
+        im.image = [UIImage imageNamed:self.selectImageArray[toIndex]];
     }
     self.currentIndex = toIndex;
 }
