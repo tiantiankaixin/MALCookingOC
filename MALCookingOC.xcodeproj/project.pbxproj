@@ -54,6 +54,9 @@
 		688C3D8C1C29246D00C736AD /* AdContent_adInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C3D8B1C29246D00C736AD /* AdContent_adInfo.m */; };
 		688C3D971C29561D00C736AD /* HomeNavHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C3D961C29561D00C736AD /* HomeNavHeader.m */; };
 		688C3D991C29562A00C736AD /* HomeNavHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 688C3D981C29562A00C736AD /* HomeNavHeader.xib */; };
+		68BC5AA71C2A6C1400CF10DB /* TplaceholderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC5AA61C2A6C1400CF10DB /* TplaceholderModel.m */; };
+		68BC5AAC1C2A6CAD00CF10DB /* PlaceholderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC5AAA1C2A6CAD00CF10DB /* PlaceholderCell.m */; };
+		68BC5AAD1C2A6CAD00CF10DB /* PlaceholderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68BC5AAB1C2A6CAD00CF10DB /* PlaceholderCell.xib */; };
 		68F237171C23DCCA00119891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F237161C23DCCA00119891 /* main.m */; };
 		68F2371A1C23DCCA00119891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F237191C23DCCA00119891 /* AppDelegate.m */; };
 		68F237221C23DCCA00119891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68F237211C23DCCA00119891 /* Assets.xcassets */; };
@@ -181,6 +184,11 @@
 		688C3D951C29561D00C736AD /* HomeNavHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavHeader.h; sourceTree = "<group>"; };
 		688C3D961C29561D00C736AD /* HomeNavHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavHeader.m; sourceTree = "<group>"; };
 		688C3D981C29562A00C736AD /* HomeNavHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeNavHeader.xib; sourceTree = "<group>"; };
+		68BC5AA51C2A6C1400CF10DB /* TplaceholderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TplaceholderModel.h; sourceTree = "<group>"; };
+		68BC5AA61C2A6C1400CF10DB /* TplaceholderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TplaceholderModel.m; sourceTree = "<group>"; };
+		68BC5AA91C2A6CAD00CF10DB /* PlaceholderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderCell.h; sourceTree = "<group>"; };
+		68BC5AAA1C2A6CAD00CF10DB /* PlaceholderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderCell.m; sourceTree = "<group>"; };
+		68BC5AAB1C2A6CAD00CF10DB /* PlaceholderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceholderCell.xib; sourceTree = "<group>"; };
 		68F237121C23DCCA00119891 /* MALCookingOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MALCookingOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F237161C23DCCA00119891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68F237181C23DCCA00119891 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -526,6 +534,25 @@
 			path = homeNavHeader;
 			sourceTree = "<group>";
 		};
+		68BC5AA41C2A6BEC00CF10DB /* tPlaceholderModel */ = {
+			isa = PBXGroup;
+			children = (
+				68BC5AA51C2A6C1400CF10DB /* TplaceholderModel.h */,
+				68BC5AA61C2A6C1400CF10DB /* TplaceholderModel.m */,
+			);
+			path = tPlaceholderModel;
+			sourceTree = "<group>";
+		};
+		68BC5AA81C2A6C9700CF10DB /* placeholderCell */ = {
+			isa = PBXGroup;
+			children = (
+				68BC5AA91C2A6CAD00CF10DB /* PlaceholderCell.h */,
+				68BC5AAA1C2A6CAD00CF10DB /* PlaceholderCell.m */,
+				68BC5AAB1C2A6CAD00CF10DB /* PlaceholderCell.xib */,
+			);
+			path = placeholderCell;
+			sourceTree = "<group>";
+		};
 		68F237091C23DCCA00119891 = {
 			isa = PBXGroup;
 			children = (
@@ -781,6 +808,7 @@
 		68F237981C240BB600119891 /* TCell */ = {
 			isa = PBXGroup;
 			children = (
+				68BC5AA81C2A6C9700CF10DB /* placeholderCell */,
 				683ADA5E1C27BE43003CB49A /* tCell */,
 				683ADA491C279542003CB49A /* issuesCell */,
 			);
@@ -793,6 +821,7 @@
 				683ADA501C27963C003CB49A /* tModel */,
 				683ADA5A1C27A2E5003CB49A /* titleModel */,
 				683ADA711C27D371003CB49A /* issueModel */,
+				68BC5AA41C2A6BEC00CF10DB /* tPlaceholderModel */,
 			);
 			path = TModel;
 			sourceTree = "<group>";
@@ -927,6 +956,7 @@
 				68F237871C23F8B200119891 /* Market.storyboard in Resources */,
 				68F237891C23F8CE00119891 /* Community.storyboard in Resources */,
 				688C3D821C2923F300C736AD /* HomeTableHeaderView.xib in Resources */,
+				68BC5AAD1C2A6CAD00CF10DB /* PlaceholderCell.xib in Resources */,
 				683ADA591C279F04003CB49A /* Template5Cell.xib in Resources */,
 				683ADA9B1C27D5A3003CB49A /* Template2Cell.xib in Resources */,
 			);
@@ -1021,6 +1051,7 @@
 				68F2377D1C23F87300119891 /* MarketViewController.m in Sources */,
 				688C3D771C2923F300C736AD /* HomeHeader_Content_navs.m in Sources */,
 				68F2379C1C240BC800119891 /* TAdapter.m in Sources */,
+				68BC5AAC1C2A6CAD00CF10DB /* PlaceholderCell.m in Sources */,
 				68F2371A1C23DCCA00119891 /* AppDelegate.m in Sources */,
 				688C3D7F1C2923F300C736AD /* Home_header_nav_cell.m in Sources */,
 				683ADAA61C27D62C003CB49A /* Template4Cell.m in Sources */,
@@ -1031,6 +1062,7 @@
 				68F237641C23E24100119891 /* MALAFNManger.m in Sources */,
 				688C3D7A1C2923F300C736AD /* HomeHeaderContentPopevent_event.m in Sources */,
 				688C3D8C1C29246D00C736AD /* AdContent_adInfo.m in Sources */,
+				68BC5AA71C2A6C1400CF10DB /* TplaceholderModel.m in Sources */,
 				688C3D791C2923F300C736AD /* HomeHeader_Content_PopEvent_dishes.m in Sources */,
 				688C3D811C2923F300C736AD /* HomeTableHeaderView.m in Sources */,
 				683ADAD91C280324003CB49A /* HomeViewController.m in Sources */,

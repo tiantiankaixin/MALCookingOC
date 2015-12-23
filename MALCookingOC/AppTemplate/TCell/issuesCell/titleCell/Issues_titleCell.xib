@@ -37,7 +37,6 @@
                         </variation>
                     </view>
                 </subviews>
-                <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="dKK-a0-t2V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lsd-PE-Qv4"/>
                     <constraint firstAttribute="bottom" secondItem="dKK-a0-t2V" secondAttribute="bottom" id="QXI-cX-rpg"/>

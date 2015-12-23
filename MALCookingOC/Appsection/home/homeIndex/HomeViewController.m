@@ -16,6 +16,7 @@
 #import "HomeHeaderModel.h"
 #import "AdModel.h"
 #import "HomeNavHeader.h"
+#import "TplaceholderModel.h"
 
 @interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -25,6 +26,7 @@
 @property (nonatomic, copy) NSString *dayStr;
 @property (nonatomic, weak) NSDateFormatter *formatter;
 @property (nonatomic, strong) HomeTableHeaderView *headerView;
+@property (nonatomic, assign) BOOL isRequesting;
 
 @end
 
@@ -39,15 +41,6 @@
     return _headerView;
 }
 
-- (NSMutableArray *)dataSource
-{
-    if(_dataSource == nil)
-    {
-        _dataSource = [[NSMutableArray alloc] init];
-    }
-    return _dataSource;
-}
-
 + (HomeViewController *)homeVC
 {
     UIStoryboard *home = StoryBoardWithName(@"Home");
@@ -58,7 +51,14 @@
 {
     [super viewDidLoad];
     [self setUpView];
-    [self.tableView.mj_header beginRefreshing];
+    [self configueSomeDefaultData];
+    [self pullDownRefresh];
+}
+
+#pragma mark - 配置一些默认数据
+- (void)configueSomeDefaultData
+{
+    self.dataSource = [TplaceholderModel getPlaceHolderWithNo:3];
 }
 
 - (void)setUpView
@@ -74,6 +74,11 @@
 
 - (void)pullDownRefresh
 {
+    if(self.isRequesting)
+    {
+        return;
+    }
+    self.isRequesting = YES;
     self.dayStr = nil;
     WeakSelf(ws);
     //加载顶部视图数据
@@ -101,11 +106,15 @@
     //加载issues数据
     [HomeRequest loadIssuesDataWithDate:self.dayStr finish:^(RequestResult *result) {
         
+        ws.isRequesting = NO;
         [ws.tableView.mj_header endRefreshing];
         NSMutableArray *array = [TAdapter adapterIssuesData:result.requestData];
-        ws.dataSource = [array objectAtIndex:1];
-        ws.cursor = [array objectAtIndex:0];
-        [ws.tableView reloadData];
+        if (!IsEmpty(array))
+        {
+            ws.dataSource = [array objectAtIndex:1];
+            ws.cursor = [array objectAtIndex:0];
+            [ws.tableView reloadData];
+        }
     }];
 }
 
@@ -171,6 +180,7 @@
 {
     id model = self.dataSource[indexPath.row];
     id cell = [model cellWithtableView:tableView];
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     return cell;
 }
 

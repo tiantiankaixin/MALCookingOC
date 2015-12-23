@@ -12,7 +12,8 @@
 
 @implementation Template1Cell
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
     // Initialization code
 }
 

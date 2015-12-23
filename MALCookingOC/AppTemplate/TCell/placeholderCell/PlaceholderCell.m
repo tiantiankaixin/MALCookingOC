@@ -1,27 +1,17 @@
 //
-//  Tcell.m
+//  PlaceholderCell.m
 //  MALCookingOC
 //
-//  Created by wangtian on 15/12/21.
+//  Created by wangtian on 15/12/23.
 //  Copyright © 2015年 wangtian. All rights reserved.
 //
 
-#import "Tcell.h"
+#import "PlaceholderCell.h"
 
-@implementation Tcell
+@implementation PlaceholderCell
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
     // Initialization code
-}
-
-- (instancetype)initWithCoder:(NSCoder *)aDecoder
-{
-    if (self = [super initWithCoder:aDecoder])
-    {
-        self.contentView.backgroundColor = AppCellBgColor;
-    }
-    return self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

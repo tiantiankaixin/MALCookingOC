@@ -8,7 +8,7 @@
 
 #import "MALAFNManger.h"
 
-#define AFNRequestTimeout 30
+#define AFNRequestTimeout  15
 #define AFNGeneralManager  [MALAFNManger shareAFNManger].generalSession
 #define AFNJsonManager     [MALAFNManger shareAFNManger].jsonSession
 
@@ -73,6 +73,7 @@ static MALAFNManger *manger = nil;
 
 + (void)getDataWithUrl:(NSString *)url parameters:(NSDictionary *)parameters finish:(FinishBlock)finish des:(NSString *)des
 {
+    //TODO: 方法过期。。 有时间再研究吧。。。
     [AFNGeneralManager GET:url parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         RequestResult *result = [[RequestResult alloc] init];

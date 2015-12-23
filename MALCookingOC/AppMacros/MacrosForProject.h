@@ -10,7 +10,8 @@
 #define MacrosForProject_h
 
 #pragma mark - 应用内使用的一些全局变量
-#define AppGeneralColor
+//
+#define AppCellBgColor   [UIColor groupTableViewBackgroundColor]
 
 
 #pragma mark - 第三方框架
