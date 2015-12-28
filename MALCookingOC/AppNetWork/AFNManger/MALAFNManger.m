@@ -118,7 +118,7 @@ static MALAFNManger *manger = nil;
             outPut = result.requestStr;
         }
     }
-    YNLog(@"\n{\n\n 请求url : %@\n\n 请求描述 : %@\n\n 请求结果 : %@\n\n}\n",paString,des,outPut);
+    YNLog(@"\n{\n\n 请求url : %@\n\n 接口描述 : %@\n\n 请求结果 : %@\n\n}\n",paString,des,outPut);
     return paString;
 }
 

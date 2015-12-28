@@ -71,14 +71,19 @@
 		68F237751C23F2B900119891 /* MalTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F237741C23F2B900119891 /* MalTabBar.m */; };
 		68F237771C23F32500119891 /* MalTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68F237761C23F32500119891 /* MalTabBar.xib */; };
 		68F2377D1C23F87300119891 /* MarketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F2377C1C23F87300119891 /* MarketViewController.m */; };
-		68F237801C23F88300119891 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F2377F1C23F88300119891 /* CommunityViewController.m */; };
 		68F237831C23F89400119891 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F237821C23F89400119891 /* MyViewController.m */; };
 		68F237871C23F8B200119891 /* Market.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F237861C23F8B200119891 /* Market.storyboard */; };
-		68F237891C23F8CE00119891 /* Community.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F237881C23F8CE00119891 /* Community.storyboard */; };
 		68F2378B1C23F8DA00119891 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F2378A1C23F8DA00119891 /* My.storyboard */; };
 		68F2378D1C23F95300119891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68F2378C1C23F95300119891 /* Main.storyboard */; };
 		68F237951C24094F00119891 /* HomeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F237941C24094F00119891 /* HomeRequest.m */; };
 		68F2379C1C240BC800119891 /* TAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F2379B1C240BC800119891 /* TAdapter.m */; };
+		BF27ACA61C2EC3F900878CC9 /* Community.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF27ACA31C2EC3F900878CC9 /* Community.storyboard */; };
+		BF27ACA71C2EC3F900878CC9 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27ACA51C2EC3F900878CC9 /* CommunityViewController.m */; };
+		BF27ACAA1C2EC43800878CC9 /* CommuityIndexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27ACA91C2EC43800878CC9 /* CommuityIndexModel.m */; };
+		BF27ACAD1C2EC5F500878CC9 /* Latest_authors.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27ACAC1C2EC5F500878CC9 /* Latest_authors.m */; };
+		BF27ACB01C2EC7B900878CC9 /* CommunityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27ACAF1C2EC7B900878CC9 /* CommunityRequest.m */; };
+		BF27ACB41C2EC99900878CC9 /* CommunithIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27ACB21C2EC99900878CC9 /* CommunithIndexCell.m */; };
+		BF27ACB51C2EC99900878CC9 /* CommunithIndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF27ACB31C2EC99900878CC9 /* CommunithIndexCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,12 +226,9 @@
 		68F237761C23F32500119891 /* MalTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MalTabBar.xib; sourceTree = "<group>"; };
 		68F2377B1C23F87300119891 /* MarketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketViewController.h; sourceTree = "<group>"; };
 		68F2377C1C23F87300119891 /* MarketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketViewController.m; sourceTree = "<group>"; };
-		68F2377E1C23F88300119891 /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
-		68F2377F1C23F88300119891 /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
 		68F237811C23F89400119891 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		68F237821C23F89400119891 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		68F237861C23F8B200119891 /* Market.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Market.storyboard; sourceTree = "<group>"; };
-		68F237881C23F8CE00119891 /* Community.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Community.storyboard; sourceTree = "<group>"; };
 		68F2378A1C23F8DA00119891 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		68F2378C1C23F95300119891 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		68F237931C24094F00119891 /* HomeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeRequest.h; sourceTree = "<group>"; };
@@ -234,6 +236,18 @@
 		68F2379A1C240BC800119891 /* TAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAdapter.h; sourceTree = "<group>"; };
 		68F2379B1C240BC800119891 /* TAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAdapter.m; sourceTree = "<group>"; };
 		AFDA182CCA4B5287F38D4794 /* libPods-MALCookingOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MALCookingOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF27ACA31C2EC3F900878CC9 /* Community.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Community.storyboard; sourceTree = "<group>"; };
+		BF27ACA41C2EC3F900878CC9 /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		BF27ACA51C2EC3F900878CC9 /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
+		BF27ACA81C2EC43800878CC9 /* CommuityIndexModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommuityIndexModel.h; sourceTree = "<group>"; };
+		BF27ACA91C2EC43800878CC9 /* CommuityIndexModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommuityIndexModel.m; sourceTree = "<group>"; };
+		BF27ACAB1C2EC5F500878CC9 /* Latest_authors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Latest_authors.h; sourceTree = "<group>"; };
+		BF27ACAC1C2EC5F500878CC9 /* Latest_authors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Latest_authors.m; sourceTree = "<group>"; };
+		BF27ACAE1C2EC7B900878CC9 /* CommunityRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityRequest.h; sourceTree = "<group>"; };
+		BF27ACAF1C2EC7B900878CC9 /* CommunityRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityRequest.m; sourceTree = "<group>"; };
+		BF27ACB11C2EC99900878CC9 /* CommunithIndexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunithIndexCell.h; sourceTree = "<group>"; };
+		BF27ACB21C2EC99900878CC9 /* CommunithIndexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunithIndexCell.m; sourceTree = "<group>"; };
+		BF27ACB31C2EC99900878CC9 /* CommunithIndexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunithIndexCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -723,6 +737,8 @@
 			children = (
 				68F237931C24094F00119891 /* HomeRequest.h */,
 				68F237941C24094F00119891 /* HomeRequest.m */,
+				BF27ACAE1C2EC7B900878CC9 /* CommunityRequest.h */,
+				BF27ACAF1C2EC7B900878CC9 /* CommunityRequest.m */,
 			);
 			path = AppRequest;
 			sourceTree = "<group>";
@@ -730,9 +746,7 @@
 		68F237661C23EFD800119891 /* community */ = {
 			isa = PBXGroup;
 			children = (
-				68F2377E1C23F88300119891 /* CommunityViewController.h */,
-				68F2377F1C23F88300119891 /* CommunityViewController.m */,
-				68F237881C23F8CE00119891 /* Community.storyboard */,
+				BF27ACA21C2EC3F900878CC9 /* communityIndex */,
 			);
 			path = community;
 			sourceTree = "<group>";
@@ -833,6 +847,23 @@
 				2C43541A92FDEBD6C90272B9 /* Pods-MALCookingOC.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF27ACA21C2EC3F900878CC9 /* communityIndex */ = {
+			isa = PBXGroup;
+			children = (
+				BF27ACA41C2EC3F900878CC9 /* CommunityViewController.h */,
+				BF27ACA51C2EC3F900878CC9 /* CommunityViewController.m */,
+				BF27ACA31C2EC3F900878CC9 /* Community.storyboard */,
+				BF27ACB11C2EC99900878CC9 /* CommunithIndexCell.h */,
+				BF27ACB21C2EC99900878CC9 /* CommunithIndexCell.m */,
+				BF27ACB31C2EC99900878CC9 /* CommunithIndexCell.xib */,
+				BF27ACA81C2EC43800878CC9 /* CommuityIndexModel.h */,
+				BF27ACA91C2EC43800878CC9 /* CommuityIndexModel.m */,
+				BF27ACAB1C2EC5F500878CC9 /* Latest_authors.h */,
+				BF27ACAC1C2EC5F500878CC9 /* Latest_authors.m */,
+			);
+			path = communityIndex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -941,6 +972,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF27ACA61C2EC3F900878CC9 /* Community.storyboard in Resources */,
 				68F237771C23F32500119891 /* MalTabBar.xib in Resources */,
 				683ADAA71C27D62C003CB49A /* Template4Cell.xib in Resources */,
 				683ADAD81C280324003CB49A /* Home.storyboard in Resources */,
@@ -954,8 +986,8 @@
 				683ADA4F1C27955D003CB49A /* Issues_titleCell.xib in Resources */,
 				68F237221C23DCCA00119891 /* Assets.xcassets in Resources */,
 				68F237871C23F8B200119891 /* Market.storyboard in Resources */,
-				68F237891C23F8CE00119891 /* Community.storyboard in Resources */,
 				688C3D821C2923F300C736AD /* HomeTableHeaderView.xib in Resources */,
+				BF27ACB51C2EC99900878CC9 /* CommunithIndexCell.xib in Resources */,
 				68BC5AAD1C2A6CAD00CF10DB /* PlaceholderCell.xib in Resources */,
 				683ADA591C279F04003CB49A /* Template5Cell.xib in Resources */,
 				683ADA9B1C27D5A3003CB49A /* Template2Cell.xib in Resources */,
@@ -1034,13 +1066,14 @@
 				683ADA6B1C27CA06003CB49A /* AppHelp.m in Sources */,
 				683ADA681C27C9F6003CB49A /* SingleClass.m in Sources */,
 				683ADA881C27D371003CB49A /* IssuesContent_Issues_Item.m in Sources */,
+				BF27ACAA1C2EC43800878CC9 /* CommuityIndexModel.m in Sources */,
 				683ADAAF1C27D682003CB49A /* Template4item_Contents.m in Sources */,
 				683ADAAC1C27D675003CB49A /* Template1item_Contents.m in Sources */,
-				68F237801C23F88300119891 /* CommunityViewController.m in Sources */,
 				68F237721C23F25C00119891 /* AppTabBarController.m in Sources */,
 				68F237581C23DFC600119891 /* UIView+MALFrame.m in Sources */,
 				683ADA4E1C27955D003CB49A /* Issues_titleCell.m in Sources */,
 				683ADA8D1C27D371003CB49A /* IssuesModel.m in Sources */,
+				BF27ACA71C2EC3F900878CC9 /* CommunityViewController.m in Sources */,
 				683ADA8C1C27D371003CB49A /* IssuesContentModel.m in Sources */,
 				683ADA611C27BE59003CB49A /* Tcell.m in Sources */,
 				683ADA901C27D3F8003CB49A /* Template2item_Contents.m in Sources */,
@@ -1048,6 +1081,7 @@
 				683ADA861C27D371003CB49A /* IssuesContent_Cursor.m in Sources */,
 				688C3D7C1C2923F300C736AD /* HomeheaderModel_Content.m in Sources */,
 				683ADA5D1C27A2F9003CB49A /* TitleModel.m in Sources */,
+				BF27ACAD1C2EC5F500878CC9 /* Latest_authors.m in Sources */,
 				68F2377D1C23F87300119891 /* MarketViewController.m in Sources */,
 				688C3D771C2923F300C736AD /* HomeHeader_Content_navs.m in Sources */,
 				68F2379C1C240BC800119891 /* TAdapter.m in Sources */,
@@ -1063,9 +1097,11 @@
 				688C3D7A1C2923F300C736AD /* HomeHeaderContentPopevent_event.m in Sources */,
 				688C3D8C1C29246D00C736AD /* AdContent_adInfo.m in Sources */,
 				68BC5AA71C2A6C1400CF10DB /* TplaceholderModel.m in Sources */,
+				BF27ACB41C2EC99900878CC9 /* CommunithIndexCell.m in Sources */,
 				688C3D791C2923F300C736AD /* HomeHeader_Content_PopEvent_dishes.m in Sources */,
 				688C3D811C2923F300C736AD /* HomeTableHeaderView.m in Sources */,
 				683ADAD91C280324003CB49A /* HomeViewController.m in Sources */,
+				BF27ACB01C2EC7B900878CC9 /* CommunityRequest.m in Sources */,
 				683ADA8B1C27D371003CB49A /* IssuesContet_Issues_item_contents_image.m in Sources */,
 				683ADA8A1C27D371003CB49A /* IssuesContet_Issues_item_contents_author.m in Sources */,
 				688C3D7D1C2923F300C736AD /* Home_header_food_cell.m in Sources */,

@@ -19,7 +19,7 @@
 {
     if (self = [super initWithCoder:aDecoder])
     {
-        self.contentView.backgroundColor = AppCellBgColor;
+        self.contentView.backgroundColor = AppGeneralBgColor;
     }
     return self;
 }

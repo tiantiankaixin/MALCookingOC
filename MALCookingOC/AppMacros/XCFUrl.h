@@ -20,4 +20,8 @@
 #pragma mark - 市集
 #define MarketUrl @"https://www.xiachufang.com/page/ec-tab/?version=12"
 
+
+#pragma mark - 社区
+#define CommunityIndexUrl @"http://api.xiachufang.com/v2/social/init_page.json?origin=iphone&longitude=&api_sign=be1230617fcac6650c325b1ba0b0da54&sk=zRbAJPx6TqqUQU5TKo-73A&latitude=&version=5.1.1&api_key=0f9f79be1dac5f003e7de6f876b17c00"
+
 #endif

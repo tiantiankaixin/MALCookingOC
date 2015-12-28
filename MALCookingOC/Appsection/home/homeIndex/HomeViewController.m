@@ -64,7 +64,7 @@
 - (void)setUpView
 {
     [HomeNavHeader addHeaderWithNavigationBar:self.navigationController.navigationBar];
-    
+    self.tableView.backgroundColor = AppGeneralBgColor;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.estimatedRowHeight = 44;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(pullDownRefresh)];

@@ -19,8 +19,8 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *foodCollectionView;
 @property (weak, nonatomic) IBOutlet UIImageView *pop_recipe_picurl_IM;
 @property (weak, nonatomic) IBOutlet UIButton *adBtn;
-@property (nonatomic, strong) NSMutableArray *navDataSource;
-@property (nonatomic, strong) NSMutableArray *pop_eventsDataSource;
+@property (nonatomic, strong) NSArray *navDataSource;
+@property (nonatomic, strong) NSArray *pop_eventsDataSource;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (nonatomic, strong) HomeHeaderModel *headerModel;
 @property (nonatomic, strong) AdModel *adModel;
@@ -29,24 +29,6 @@
 @end
 
 @implementation HomeTableHeaderView
-
-- (NSMutableArray *)navDataSource
-{
-    if (_navDataSource == nil)
-    {
-        _navDataSource = [[NSMutableArray alloc] init];
-    }
-    return _navDataSource;
-}
-
-- (NSMutableArray *)pop_eventsDataSource
-{
-    if (_pop_eventsDataSource == nil)
-    {
-        _pop_eventsDataSource = [[NSMutableArray alloc] init];
-    }
-    return _pop_eventsDataSource;
-}
 
 + (HomeTableHeaderView *)hometableheaderView
 {
@@ -76,13 +58,12 @@
     [self.pop_recipe_picurl_IM sd_setImageWithURL:MALURL(model.content.pop_recipe_picurl) placeholderImage:nil options:SDWebImageLowPriority];
     
     //pop_events
-    [self.pop_eventsDataSource addObjectsFromArray:model.content.pop_events.events];
+    self.pop_eventsDataSource = model.content.pop_events.events;
     self.pageControl.numberOfPages = self.pop_eventsDataSource.count;
     self.pageControl.hidden = NO;
     
     //navs
-    [self.navDataSource addObjectsFromArray:model.content.navs];
-    
+    self.navDataSource = model.content.navs;
     [self.navCollectionView reloadData];
     [self.foodCollectionView reloadData];
 }
@@ -111,7 +92,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *cellIdentifier = NavCell_Identifier;
-    NSMutableArray *dataSource = self.navDataSource;
+    NSArray *dataSource = self.navDataSource;
     if (collectionView == self.foodCollectionView)
     {
         cellIdentifier = FoodCell_Identifier;
@@ -128,7 +109,7 @@
     CGSize size = CGSizeMake(SCREEN_WIDTH, SCREEN_WIDTH * (15 / 64.0));
     if (collectionView == self.navCollectionView)
     {
-        size.height = 75;
+        size.height = 72;
         size.width = SCREEN_WIDTH / 4;
     }
     return size;

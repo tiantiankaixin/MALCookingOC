@@ -10,9 +10,8 @@
 #define MacrosForProject_h
 
 #pragma mark - 应用内使用的一些全局变量
-//
-#define AppCellBgColor   [UIColor groupTableViewBackgroundColor]
 
+#define AppGeneralBgColor   RGB(245, 245, 236)
 
 #pragma mark - 第三方框架
 //SDWebImage

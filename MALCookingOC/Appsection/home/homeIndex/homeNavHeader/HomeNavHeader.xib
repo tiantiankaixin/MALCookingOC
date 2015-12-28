@@ -27,7 +27,7 @@
                     </constraints>
                     <state key="normal" backgroundImage="buylistButtonImage"/>
                 </button>
-                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-GF-JIw">
+                <searchBar userInteractionEnabled="NO" contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-GF-JIw">
                     <rect key="frame" x="47" y="0.0" width="226" height="44"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
