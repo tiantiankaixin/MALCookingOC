@@ -10,9 +10,5 @@
 
 @implementation NSDate (mal)
 
-+ (NSString *)todayStrWithDateformatter:(NSDateFormatter *)formatter
-{
-    return [formatter stringFromDate:[NSDate date]];
-}
 
 @end

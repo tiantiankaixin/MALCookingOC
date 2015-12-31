@@ -9,6 +9,7 @@
 #import "CommunityViewController.h"
 #import "CommunityRequest.h"
 #import "CommunithIndexCell.h"
+#import "TopicListViewController.h"
 
 @interface CommunityViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -35,6 +36,7 @@
 
 - (void)setUpView
 {
+    SetBackItem;
     [self.navigationItem setTitle:@"社区"];
     self.tableView.backgroundColor = AppGeneralBgColor;
     self.tableView.tableFooterView = [[UIView alloc] init];
@@ -53,6 +55,10 @@
         {
             [ws.tableView reloadData];
         }
+        else
+        {
+            //数据加载失败
+        }
     }];
 }
 
@@ -69,13 +75,20 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CommunithIndexCell *cell = [tableView dequeueReusableCellWithIdentifier:CommunityIndexCell_Identifier];
-    
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(CommunithIndexCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [cell setModel:self.dataSource[indexPath.row]];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TopicListViewController *topicList = [TopicListViewController topicListVC];
+    topicList.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:topicList animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

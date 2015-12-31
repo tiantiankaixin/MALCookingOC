@@ -21,22 +21,18 @@
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
-      "extent" : "full-screen",
-      "scale" : "1x"
-    },
-    {
-      "orientation" : "portrait",
-      "idiom" : "iphone",
       "filename" : "LaunchImage-700@2x.png",
       "extent" : "full-screen",
+      "unassigned" : true,
       "scale" : "2x"
     },
     {
-      "orientation" : "portrait",
-      "idiom" : "iphone",
-      "filename" : "LaunchImage-568h@2x.png",
       "extent" : "full-screen",
+      "idiom" : "iphone",
       "subtype" : "retina4",
+      "filename" : "LaunchImage-568h@2x.png",
+      "orientation" : "portrait",
+      "unassigned" : true,
       "scale" : "2x"
     }
   ],

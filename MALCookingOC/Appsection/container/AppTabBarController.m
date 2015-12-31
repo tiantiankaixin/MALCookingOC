@@ -40,8 +40,11 @@
 - (void)addChildVC
 {
     UINavigationController *homeNavi = [[UINavigationController alloc] initWithRootViewController:[HomeViewController homeVC]];
+    homeNavi.view.backgroundColor = AppGeneralBgColor;
     UINavigationController *marketNavi = [[UINavigationController alloc] initWithRootViewController:[MarketViewController marketVC]];
+    marketNavi.view.backgroundColor = AppGeneralBgColor;
     UINavigationController *communityNavi = [[UINavigationController alloc] initWithRootViewController:[CommunityViewController communityVC]];
+    communityNavi.view.backgroundColor = AppGeneralBgColor;
     UINavigationController *myNavi = [[UINavigationController alloc] initWithRootViewController:[MyViewController myVC]];
     self.viewControllers = @[homeNavi,marketNavi,communityNavi,myNavi];
 }

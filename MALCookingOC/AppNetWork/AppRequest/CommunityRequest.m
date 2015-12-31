@@ -15,4 +15,10 @@
     [MALAFNManger getDataWithUrl:CommunityIndexUrl parameters:nil finish:finish des:@"加载社区首页数据"];
 }
 
+#pragma mark - 获得主题列表数据
++ (void)getTopicListDataWithFinishBlock:(FinishBlock)finish
+{
+    [MALAFNManger getDataWithUrl:TopicListUrl parameters:nil finish:finish des:@"获得主题列表数据"];
+}
+
 @end

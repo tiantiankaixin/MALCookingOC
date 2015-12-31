@@ -12,4 +12,11 @@
 
 + (void)getCommunithRequestDataWithFinishBlock:(FinishBlock)finish;
 
+/**
+ *  获得主题列表数据
+ *
+ *  @param finish 回调block
+ */
++ (void)getTopicListDataWithFinishBlock:(FinishBlock)finish;
+
 @end
