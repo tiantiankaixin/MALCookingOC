@@ -21,4 +21,10 @@
     [MALAFNManger getDataWithUrl:TopicListUrl parameters:nil finish:finish des:@"获得主题列表数据"];
 }
 
+#pragma mark - 根据id加载主题数据
++ (void)getTopicDataWithID:(NSString *)ID finishBlock:(FinishBlock)finish
+{
+    [MALAFNManger getDataWithUrl:TopicWithID(ID) parameters:nil finish:finish des:@"获得主题数据"];
+}
+
 @end

@@ -24,7 +24,12 @@
 #pragma mark - 社区
 //首页url
 #define CommunityIndexUrl @"http://api.xiachufang.com/v2/social/init_page.json?origin=iphone&longitude=&api_sign=be1230617fcac6650c325b1ba0b0da54&sk=zRbAJPx6TqqUQU5TKo-73A&latitude=&version=5.1.1&api_key=0f9f79be1dac5f003e7de6f876b17c00"
+
+
+//主题
 //主题列表
 #define TopicListUrl @"http://api.xiachufang.com/v2/forums/2/topics.json?offset=0&origin=iphone&api_sign=3d1b537c1786e169000b7192103cef5e&sk=zRbAJPx6TqqUQU5TKo-73A&limit=20&version=5.1.1&api_key=0f9f79be1dac5f003e7de6f876b17c00"
+//单个主题
+#define TopicWithID(ID)  [NSString stringWithFormat:@"http://api.xiachufang.com/v2/topics/%@/comments.json?offset=0&origin=iphone&api_sign=3d1b537c1786e169000b7192103cef5e&sk=zRbAJPx6TqqUQU5TKo-73A&limit=20&version=5.1.1&api_key=0f9f79be1dac5f003e7de6f876b17c00",ID]
 
 #endif

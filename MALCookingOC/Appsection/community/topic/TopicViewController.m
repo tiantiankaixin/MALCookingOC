@@ -7,6 +7,8 @@
 //
 
 #import "TopicViewController.h"
+#import "TopicCell.h"
+#import "CommunityRequest.h"
 
 @interface TopicViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -40,11 +42,22 @@
     //tableView
     self.tableView.backgroundColor = AppGeneralBgColor;
     self.tableView.tableFooterView = [UIView new];
+    [self.tableView registerNib:[UINib nibWithNibName:@"TopicCell" bundle:nil] forCellReuseIdentifier:topicCellIdentifier];
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(pullDownRefresh)];
 }
 
 - (void)pullDownRefresh
 {
-    
+    WeakSelf(ws);
+    [CommunityRequest getTopicDataWithID:self.topicModel.ID finishBlock:^(RequestResult *result) {
+        
+        [ws.tableView.mj_header endRefreshing];
+        ws.dataSource = [TopicModel topicDataSourceWithData:result.requestData];
+        if (ws.dataSource.count > 0)
+        {
+            [ws.tableView reloadData];
+        }
+    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -52,7 +65,28 @@
     return self.dataSource.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TopicModel *model = self.dataSource[indexPath.row];
+    
+    
+    
+    return model.cellHeight;
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TopicCell *cell = [tableView dequeueReusableCellWithIdentifier:topicCellIdentifier];
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TopicCell *tCell = (TopicCell *)cell;
+    [tCell setModel:self.dataSource[indexPath.row]];
+}
 
 - (void)didReceiveMemoryWarning
 {

@@ -13,7 +13,7 @@
 #define YNDic(jsonData) [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil]
 #define YNStr(data)  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]
 
-typedef void(^FinishBlock)(RequestResult *);
+typedef void(^FinishBlock)(RequestResult *result);
 
 @interface MALAFNManger : NSObject
 

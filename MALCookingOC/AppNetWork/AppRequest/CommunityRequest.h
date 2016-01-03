@@ -19,4 +19,12 @@
  */
 + (void)getTopicListDataWithFinishBlock:(FinishBlock)finish;
 
+/**
+ *  根据id加载主题数据
+ *
+ *  @param ID 主题id
+ *  @param finish 回调block
+ */
++ (void)getTopicDataWithID:(NSString *)ID finishBlock:(FinishBlock)finish;
+
 @end

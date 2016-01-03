@@ -23,5 +23,8 @@
 
 @property (nonatomic, copy) NSString *create_time;
 
+@property (nonatomic, assign) CGFloat cellHeight;
+
++ (NSMutableArray *)topicDataSourceWithData:(NSDictionary *)dataDic;
 
 @end

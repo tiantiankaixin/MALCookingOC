@@ -94,6 +94,7 @@
 		BF27ACB01C2EC7B900878CC9 /* CommunityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27ACAF1C2EC7B900878CC9 /* CommunityRequest.m */; };
 		BF27ACB41C2EC99900878CC9 /* CommunithIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF27ACB21C2EC99900878CC9 /* CommunithIndexCell.m */; };
 		BF27ACB51C2EC99900878CC9 /* CommunithIndexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF27ACB31C2EC99900878CC9 /* CommunithIndexCell.xib */; };
+		BFF2C2BD1C3949D200D59C38 /* ApperanceConfigue.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2C2BC1C3949D200D59C38 /* ApperanceConfigue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,6 +277,8 @@
 		BF27ACB11C2EC99900878CC9 /* CommunithIndexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunithIndexCell.h; sourceTree = "<group>"; };
 		BF27ACB21C2EC99900878CC9 /* CommunithIndexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunithIndexCell.m; sourceTree = "<group>"; };
 		BF27ACB31C2EC99900878CC9 /* CommunithIndexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunithIndexCell.xib; sourceTree = "<group>"; };
+		BFF2C2BB1C3949D200D59C38 /* ApperanceConfigue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApperanceConfigue.h; sourceTree = "<group>"; };
+		BFF2C2BC1C3949D200D59C38 /* ApperanceConfigue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApperanceConfigue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -652,6 +655,7 @@
 		68F237141C23DCCA00119891 /* MALCookingOC */ = {
 			isa = PBXGroup;
 			children = (
+				BFF2C2B91C3949AB00D59C38 /* AppConfigue */,
 				68F237961C240BB600119891 /* AppTemplate */,
 				68F2376B1C23F15C00119891 /* CustomTool */,
 				68F237481C23DD5800119891 /* AppCategory */,
@@ -928,6 +932,23 @@
 			path = communityIndex;
 			sourceTree = "<group>";
 		};
+		BFF2C2B91C3949AB00D59C38 /* AppConfigue */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2C2BA1C3949AB00D59C38 /* ApperanceConfigue */,
+			);
+			path = AppConfigue;
+			sourceTree = "<group>";
+		};
+		BFF2C2BA1C3949AB00D59C38 /* ApperanceConfigue */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2C2BB1C3949D200D59C38 /* ApperanceConfigue.h */,
+				BFF2C2BC1C3949D200D59C38 /* ApperanceConfigue.m */,
+			);
+			path = ApperanceConfigue;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1172,6 +1193,7 @@
 				688C3D811C2923F300C736AD /* HomeTableHeaderView.m in Sources */,
 				683ADAD91C280324003CB49A /* HomeViewController.m in Sources */,
 				68E5A9BD1C3532DF0059CAC7 /* TopicModel.m in Sources */,
+				BFF2C2BD1C3949D200D59C38 /* ApperanceConfigue.m in Sources */,
 				BF27ACB01C2EC7B900878CC9 /* CommunityRequest.m in Sources */,
 				683ADA8B1C27D371003CB49A /* IssuesContet_Issues_item_contents_image.m in Sources */,
 				683ADA8A1C27D371003CB49A /* IssuesContet_Issues_item_contents_author.m in Sources */,
